@@ -1,5 +1,5 @@
 import { endAdventure } from '../..';
-import { wakeUp } from '../chapter_6/chapter_6_wake_up';
+import { drinkPotion } from '../chapter_6/chapter_6_potions';
 import { askQuestion, clear, print } from '../ui/console';
 
 const VERDICTS = ['Guilty', 'Not Guilty'] as const;
@@ -50,8 +50,8 @@ export function meetTheQueen(): void {
 		return endAdventure();
 	} else {
 		print(`You have been found NOT GUILTY! Thank goodness. 🥳`);
-		print('Time to wake up...');
-		return askQuestion('Press ENTER to continue! ', wakeUp);
+		print('What could be up next..');
+		return askQuestion('Press ENTER to continue! ', drinkPotion);
 	}
 }
 
